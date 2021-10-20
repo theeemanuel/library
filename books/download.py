@@ -23,8 +23,8 @@ def download_file(url, filename=''):
 #print("[P.S. In case of exception, close & run again with a different domain]")
 
 print()
-print("[P.S. In case of exception or if it is taking a long time, close & run again]")
-isbn = int(input("Enter the ISBN: "))
+print("[In case of exception or if it is taking a long time, close & run again]")
+isbn = str(input("Enter the ISBN: "))
 try:
     req = requests.get('https://libgen.rs/search.php?req='+str(isbn)+'&open=0&res=25&view=simple&phrase=1&column=def')
 except Exception:
